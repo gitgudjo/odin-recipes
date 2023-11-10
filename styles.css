@@ -1,0 +1,78 @@
+body{
+ background-color: antiquewhite;
+ margin-left: 50px;
+ margin-right: 50px;
+}
+
+#header{
+position: relative;
+}
+
+#title h1{
+    font-family: "norseregular";
+    position: relative;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+    font-size: 5vw;
+    text-align: center;
+    color: black;
+    bottom: 2vw;
+    opacity: 0;
+    animation: intro 2s forwards;
+}
+
+#titleline img{
+display: block;
+margin: 0 auto;
+width: auto;
+opacity: 0;
+animation: FadeIn 1s forwards;
+animation-delay: 1.5s ;
+}
+
+#gyoza img{
+ max-width: 350px;
+ border-radius: 10px;
+position: relative;
+opacity: 0;
+animation: SlideIn 1.5s forwards;
+animation-delay: 2.5s;
+top: 100px ;
+}
+
+#pesto img{
+    width: 350px;
+    height: 350px;
+     border-radius: 10px;
+    position: relative;
+    opacity: 0;
+     animation: SlideIn 1.5s forwards;
+    animation-delay: 2.5s;
+    top: 140px ;
+       
+}
+
+
+@keyframes intro {
+    0% { opacity: 0; top: -100px; } 
+    100% { opacity: 1; top: 0; } 
+  }
+
+@keyframes FadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes SlideIn {
+    0% {opacity: 0; left: -100px;}
+    100% {opacity: 1; left: 200px;}
+
+}
+
+
+  
+  @font-face {
+    font-family: 'norseregular';
+    src: url(resources/Norse.otf);
+}
